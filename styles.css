@@ -1,0 +1,763 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-stretch: semi-condensed;
+}
+
+.fixed-top {
+  position: fixed;     
+  width: 100%; 
+  height: 40px;   
+  color: black;    
+  padding: 15px;
+  z-index:1000;  
+  font-size: 13.5px; 
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  font-stretch: extra-expanded;
+  text-align: center;  
+  background-color: white;
+}
+.fixed-top u{
+  letter-spacing: 0.7px;
+  font-stretch: extra-expanded;
+  font-weight: 500;
+}
+.navbar{
+  background-color: transparent !important  ;
+  height: 90px;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  display: flex;
+  
+}
+.tds-icon{
+  width: 100px;
+  height: 21px;
+  margin-top: 40px;
+  margin-left: 40px;
+  color: white;
+}
+.center-nav{
+  height: 20px;
+  margin: auto;
+  margin-top: 47px;
+  font-size: 13px; 
+  color: white;
+}
+.right-nav{
+  display: flex;
+  margin-top: 30px;
+  font-size: 15px; 
+  margin-right: 20px;
+  color: white;
+}
+.menu-list{
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.nav-list{
+  margin: 0,0,0px;
+}
+.nav-list a{
+  text-decoration: none;
+  width: 1rem;
+  padding: 6px;
+  font-weight: 600;
+  font-stretch: extra-expanded;
+}
+.full-page {
+  width: 100%;
+}
+.first-page {
+  width: 100%;            
+  height: 100vh;          
+  position: relative;
+  object-fit: cover;  
+  background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-APR-Promo-Hero-Mobile-v3.png");
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */    
+}
+.full-page-image {
+  width: 100%;            
+  height: 100%;           
+  object-fit: cover;      
+  display: block;         
+}
+.overlay-content {
+  position: absolute;
+  top: 30%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center;  
+  margin-top: 1.5rem;
+}
+.overlay-content h1 {
+  font-size: 2.5rem;
+  font-stretch: extra-expanded;
+  margin-bottom: 1rem;
+  color: white;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.buttonn {
+  padding:0.7rem 4rem;
+  font-size: 0.8rem;
+  font-stretch: extra-expanded;
+  font-weight: lighter;
+  color:black;
+  background-color: white; 
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+  .second-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.second-page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;    
+}  
+.overlay-content2 {
+  position: absolute;
+  top: 150%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  margin-top: -4rem;
+}
+
+.overlay-content2 h1 {
+  font-size: 2.4rem;
+  font-stretch: expanded;
+  color: white;
+  margin-top: 12rem;
+}
+.overlay-content2 h3 {
+  font-size: 1.5rem;
+  font-stretch:extra-expanded;
+}
+.overlay-content2 h4 {
+  font-size: 1rem;
+  font-stretch: expanded;
+  color: white;
+  margin-bottom: 16rem;
+}
+
+.buttons2 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 10px;
+  padding-bottom: 100px;
+}
+
+.button {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button2-1 {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: rgb(14, 151, 225); 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.third-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden;   */
+   
+}
+.third-page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;    
+}  
+.overlay-content3 {
+  position: absolute;
+  top: 265%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  
+}
+
+.overlay-content3 h1 {
+  font-size: 3rem;
+}
+.overlay-content3 h3 {
+  font-size: 1.8rem;
+}
+.overlay-content3 h4 {
+  font-size: 1rem;
+  margin-bottom: 13rem;
+}
+
+/* .buttons2 {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-top: 300px;
+} */
+
+.button {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button2-1 {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: rgb(15, 140, 208); 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.fourth-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden;   */
+   
+}
+.fourth-page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;    
+}  
+.overlay-content4 {
+  position: absolute;
+  top: 365%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  
+}
+
+.overlay-content4 h1 {
+  font-size: 3rem;
+}
+.overlay-content4 h3 {
+  font-size: 2rem;
+}
+.overlay-content4 h5 {
+  font-size: 1rem;
+  margin-bottom: 12rem;
+}
+
+/* .buttons2 {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-top: 300px;
+} */
+
+.button {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button2-1 {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: rgb(15, 140, 208); 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.fifth-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden;   */
+   
+}
+.fifth-page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;    
+}  
+.overlay-content5 {
+  position: absolute;
+  top: 465%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  
+}
+
+.overlay-content5 h1 {
+  font-size: 3rem;
+}
+.overlay-content5 h3 {
+  font-size: 2rem;
+}
+.overlay-content5 h5 {
+  font-size: 1rem;
+  margin-bottom: 13rem;
+}
+
+/* .buttons2 {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-top: 300px;
+} */
+
+.button {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button2-1 {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: rgb(15, 140, 208); 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.sixth-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden;   */
+   
+}
+.sixth-page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;    
+}  
+.overlay-content6 {
+  position: absolute;
+  top: 550%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  
+}
+.tds-icon-logo-cybertruck{
+  font-size: 3.5rem;
+  margin-bottom: 0rem;
+}
+
+
+.buttons6 {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-top: 300px;
+}
+
+.button6 {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:white;
+  background-color: black; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}  
+
+
+.seventh-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden;   */
+   
+}
+.seventh-page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;    
+}  
+.overlay-content7 {
+  position: absolute;
+  top: 650%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  
+}
+
+.overlay-content7 h1 {
+  font-size: 2.8rem;
+  margin-top: 5rem;
+}
+.overlay-content7 h5 {
+  font-size: 1.5rem;
+  margin-bottom: 17rem;
+}
+/* .buttons2 {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-top: 300px;
+} */
+
+.button {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button2-1 {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: rgb(15, 140, 208); 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.eighth-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden;   */
+   
+}
+.eighth-page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;    
+}  
+.overlay-content8 {
+  position: absolute;
+  top: 750%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  
+}
+
+.overlay-content8 h1 {
+  font-size: 3rem;
+  margin-bottom: 0rem;
+  margin-top: 5rem;
+}
+.overlay-content8 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16rem;
+  
+}
+/* .buttons2 {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-top: 300px;
+} */
+
+.button {
+  padding: 0.7rem 5rem;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  color:black;
+  background-color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button2-1 {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: rgb(15, 140, 208); 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.nineth-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden;   */
+   
+}
+.nineth-page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;    
+}  
+.overlay-content9 {
+  position: absolute;
+  top: 850%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+}
+.overlay-content9 h1 {
+  font-size: 3rem;
+  margin-bottom: 15rem;
+  margin-top: 6rem;
+}
+/* .buttons2 {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-top: 300px;
+} */
+
+.button {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button2-1 {
+  padding: 0.7rem 5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color:black;
+  background-color: rgb(15, 140, 208); 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tenth-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden;   */
+   
+}
+.tenth-page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;    
+}  
+.overlay-content10 {
+  position: absolute;
+  top: 950%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+}
+.overlay-content10 h1 {
+  font-size: 3rem;
+  margin-bottom: 15rem;
+  margin-top: 8rem;
+}
+/* .buttons2 {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-top: 350px;
+} */
+
+.button2-1 {
+  padding: 0.7rem 5rem;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  color:black;
+  background-color: rgb(15, 140, 208); 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.eleventh-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden;   */
+   
+}
+.eleventh-page-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;    
+}  
+.overlay-content11 {
+  position: absolute;
+  top: 1060%; /* Centers vertically */
+  left: 15%; /* Centers horizontally */
+  transform: translate(-50%, -50%); 
+  /* text-align: center;  */
+}
+.overlay-content11 h1 {
+  font-size: 2rem;
+  margin-top: 11rem;
+}
+.buttons11 {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.button11-1 {
+  padding: 0.3rem 1rem;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color:black;
+  background-color:white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.twelth-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden;   */
+   
+}
+.section{
+  color: rgba(0, 0, 0, 0.801);
+}
+.overlay-content12 {
+  position: absolute;
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+ 
+}
+.overlay-content12 u{
+  color: rgb(0, 0, 0);
+  
+}
+
+
+.fixed-bottom {
+  position: fixed; 
+  bottom:0;          
+  left: 0;         
+  width: 100%; 
+  /* height: 55px;    */
+  background-color:whitesmoke;  
+  padding: 4px;
+  z-index:1000;  
+  
+  
+}
+/* .tds-icon-steering-wheel{
+  bottom: 0;
+  height: 10px;
+  left: 0;
+} */
+.footer{
+  font-size: 16px; /* Font size */
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-stretch: extra-expanded;
+  text-align: center; 
+  color: black;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.footer-icon {
+  width: 24px; /* Adjust the size of the image */
+  height: 24px;
+  margin-right: 8px; /* Space between image and text */
+}
